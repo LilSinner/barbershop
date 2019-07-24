@@ -6,6 +6,7 @@
   </head>
   <body>
     <header class="main-header">
+		<img src="C:\MainCore\[HTML Academy] Профессиональный HTML и CSS Уровень 1\12 Макеты\barbershop\barbershop-design\Новая папка\layer.png" width="100%" height="100%">
 	  <nav class="main-navigation">
 	    <a class="main-header-logo">  
 	      <img src="img/index-logo.svg" width="368" height="153" alt="Барбершоп "Бородинский"">
@@ -95,7 +96,12 @@
 	  <section class="appointment">
 	    <h2>Записаться</h2>
 		<p class="appointment-info">Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
-		<!-- Здесь будет форма -->
+		<form action="https://echo.htmlacademy.ru" method="get">
+		  <label for="data-field">Дата</label>
+		  <label for="time-field">Время</label><br>
+		  <input type="text" id="data-field" name="data">
+		  <input type="text" id="time-field" name="time">
+		</form>
 	  </section>
 	</main>
 	<footer class="main-footer">
