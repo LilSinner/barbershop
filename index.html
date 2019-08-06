@@ -3,9 +3,10 @@
 <head>
 	<meta charset="utf-8">
 	<title>Барбершоп "Бородинский"</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
 </head>
 <body>
-	<img src="img/Layer.png" alt="Логотип">
+
 	<header class="main-header">
 		<nav class="container main-navigation">
 			<ul class="site-navigation">
@@ -109,7 +110,7 @@
 			<h2>Записаться</h2>
 			<p class="appointment-info">Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони
 			</p>
-			<form action="https://echo.htmlacademy.ru" method="get">
+			<form action="https://echo.htmlacademy.ru" method="post">
 				<div class="form-group">
 					<div class="form-control">
 						<label for="data-field">Дата</label>
@@ -163,7 +164,7 @@
 				</div>
 			</div>
 	
-			<div class="footer-col">
+			<div class="footer-col footer-copyright">
 				<p>
 					<b>Разработано:</b>
 					<a class="button" href="https://htmlacademy.ru">HTML Academy</a>
@@ -180,8 +181,9 @@
 			<input type="text" name="login" id="login-field" value="Логин">
 			<label for="password-field" class="visually hidden">Пароль</label>
 			<input type="password" name="password" id="password-field" value="Пароль">
-			<input type="checkbox" name="remember" id="remember-field" class="visually hidden">
+			<input type="login-checkbox" name="remember" id="remember-field" class="visually hidden">
 			<label for="remember-field" class="visually hidden">Запомнить меня?</label>
+			<a class="restore" href="#">Я забыл пароль!</a>
 			<input type="submit" value="Войти">
 		</form>
 		<button type="button" class="modal-close">Закрыть</button>
