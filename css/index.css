@@ -1,39 +1,17 @@
+/* @font-face {
+  font-family: "PT Sans Narrow";
+  src: url('../fonts/PT Sans/PTSans-Regular.ttf');
+}    */
+
 body {
   margin: 0;
   padding: 0;
-
   font-family: "PT Sans Narrow", Arial, sans-serif;
   font-size: 14px;
   line-height: 24px;
   font-weight: 700;
-  color: #ffffff;
+  color: #fff;
   text-transform: uppercase;
-
-  background-image: url(img/Layer.png);
-  background-color: #000000;
-  background-position: top center;
-  background-attachment: fixed;
-  background-repeat: repeat;
-}
-
-.main-header {
-  font-size: 16px;
-  line-height: 20px;
-  color: #ffffff;
-
-  background-color: black;
-  background-attachment: fixed;
-}
-
-.main-navigation {
-  font-size: 16px;
-  text-align: left;
-  position: relative;
-}
-
-.container {
-  width: 940px;
-  margin: 0 auto;
 }
 
 h2, h3 {
@@ -45,6 +23,27 @@ a {
   text-decoration: none;
 }
 
+.container {
+  width: 940px;
+  margin: 0 auto;
+}
+
+/* HEADER */
+
+.main-header {
+  font-size: 16px;
+  line-height: 20px;
+  color: #fff;
+  background-color: #000;
+  background-attachment: fixed;
+}
+
+.main-navigation {
+  font-size: 16px;
+  text-align: left;
+  position: relative;
+}
+
 .site-navigation,
 .user-navigation {
   list-style: none;
@@ -52,14 +51,18 @@ a {
 
 .site-navigation a,
 .user-navigation a {
-  color: #ffffff;
+  color: #fff;
 }
 
-.site-navigation a:hover,
+/* .site-navigation a:hover,
 .site-navigation a:focus,
 .user-navigation a:hover,
 .user-navigation a:focus {
   background-color: #242424;
+} */
+
+.wrapper {
+  background: url(../img/Layer.png) top center fixed repeat #000;
 }
 
 .features-list {
@@ -71,11 +74,9 @@ a {
 }
 
 .news {
-  color: #000000;
-
-  background-image: url("img/pattern-light.jpg");
+  color: #000;
+  background-image: url("../img/pattern-light.jpg");
   background-color: #f8f5f2;
-  background-position: 0 0;
   background-repeat: repeat;
 }
 
@@ -88,19 +89,16 @@ a {
 }
 
 .gallery-content {
-  background-color: #cccccc;
-  border: 7px solid #ffffff;
+  background-color: #ccc;
+  border: 7px solid #fff;
 }
 
 .button {
-  font: inherit;
-
   text-align: center;
-  color: #ffffff;
+  color: #fff;
   vertical-align: middle;
   text-transform: uppercase;
-
-  background-color: #000000;
+  background-color: #000;
   border: none;
 }
 
@@ -111,38 +109,40 @@ a {
 }
 
 .contacts {
-  color: #000000;
-
-  background-image: url("img/pattern-light.jpg");
+  color: #000;
+  background-image: url("../img/pattern-light.jpg");
   background-color: #f8f5f2;
-  background-position: 0 0;
   background-repeat: repeat;
 }
 
 .appointment input {
-  font: inherit;
-
   background-color: transparent;
-  border: 2px solid #000000;
+  border: 2px solid #000;
 }
 
 .appointment input:focus {
   border-color: #663d15;
 }
 
+
+
+
+
+
+
+/* FOOTER */
+
 .main-footer {
   font-size: 16px;
   line-height: 20px;
-  color: #ffffff;
-
-  background-image: url("img/pattern-dark.jpg");
+  color: #fff;
+  background-image: url("../img/pattern-dark.jpg");
   background-color: #212121;
-  background-position: 0 0;
   background-repeat: repeat;
 }
 
-.footer-contacts a{
-  color: #ffffff;
+.footer-contacts a {
+  color: #fff;
   text-decoration: underline;
 }
 
@@ -160,7 +160,7 @@ a {
 }
 
 .social-button {
-  color: #ffffff;
+  color: #fff;
 }
 
 .footer-copyright {
@@ -169,28 +169,23 @@ a {
 
 .footer-copyright .button:hover,
 .footer-copyright .button:focus {
-  color: #000000;
-  
-  background-color: #ffffff;
+  color: #000;
+  background-color: #fff;
 }
 
 .modal {
-  color: #000000;
-
+  color: #000;
   background-color: #f8f3f0;
-  background-image: url("img/pattern-light.jpg");
-  background-position: 0 0;
+  background-image: url("../img/pattern-light.jpg");
   background-repeat: repeat;
 }
 
-.modal-login input[type="text"],
-.modal-login input[type="password"] {
-  font: inherit;
-  color: #000000;
+.form-control {
+  color: #000;
   text-transform: uppercase;
 
   background-color: #f9f6f3;
-  border: 2px solid #000000;
+  border: 2px solid #000;
 }
 
 .modal-login input:focus {
@@ -203,7 +198,7 @@ a {
 }
 
 .restore {
-  color: #000000;
+  color: #000;
   text-decoration: underline;
 }
 
