@@ -8,8 +8,8 @@
 <body>
 
 	<header class="main-header">
-		<nav class="container main-navigation">
-			<div class="main-navigation-wrapper">
+		<nav class="container">
+			<div class="main-navigation">
 				<ul class="site-navigation">
 					<li><a href="info.html">Информация</a></li>
 					<li><a href="news.html">Новости</a></li>
@@ -20,7 +20,7 @@
 				<ul class="user-navigation">
 					<li><a class="login-link" href="login.html">Вход</a></li>
 				</ul>
-			</div>	
+			</div>
 		</nav>
 	</header>
 
@@ -36,111 +36,117 @@
 
 			<div class="features-list">
 				<div class="features-item">
-					<h3>Быстро</h3>
+					<h3 class="features-title">Быстро</h3>
 					<p>Мы делаем свою работу быстро! Два часа пролетят незаметно и вы - счастливый обладатель стильной
 						стрижки-минутки!</p>
 				</div>
 
 				<div class="features-item">
-					<h3>Круто</h3>
+					<h3 class="features-title">Круто</h3>
 					<p>Забудьте, как вы стриглись раньше. Мы сделаем из вас звезду футбола или кино! Во всяком случае
 						внешне.</p>
 				</div>
 
 				<div class="features-item">
-					<h3>Дорого</h3>
+					<h3 class="features-title">Дорого</h3>
 					<p>Наши мастера - профессионалы своего дела и не могут стоить дешево. К тому же, разве цена не дает
 						определенный статус?</p>
 				</div>
 			</div>
 		</section>
 
-		<section class="container news index-collumns">
-			<div class="news">
-				<h2>Новости</h2>
+		<section class="container">
+			<div class="index-collumns">
+				<div class="news">
+					<h2>Новости</h2>
 
-				<div class="news-list">
-					<article class="news-item">
-						<p>Нам наконец завезли Ягермайстер! Теперь вы можете пропустить стаканчик во время стрижки</p>
-						<time datetime="2016-01-11">11 января</time>
-					</article>
-					
-					<article class="news-item">
-						<p>В нашей команде пополнение, Борис "Бритва" Стригунец, обладатель множества титулов и наград
-							пополнил наши стройные ряды</p>
-						<time datetime="2016-01-18">18 января</time>
-					</article>
+					<div class="news-list">
+						<article class="news-item">
+							<p>Нам наконец завезли Ягермайстер! Теперь вы можете пропустить стаканчик во время стрижки</p>
+							<time datetime="2016-01-11">11 января</time>
+						</article>
+						
+						<article class="news-item">
+							<p>В нашей команде пополнение, Борис "Бритва" Стригунец, обладатель множества титулов и наград
+								пополнил наши стройные ряды</p>
+							<time datetime="2016-01-18">18 января</time>
+						</article>
+					</div>
+
+					<a class="button" href="news.html">Все новости</a>
 				</div>
 
-				<a class="button" href="news.html">Все новости</a>
-			</div>
-
-			<div class="gallery">
-				<h2>Фотогалерея</h2>
-				<div class="gallery-container">
-					<figure class="gallery-content">
-						<a href="#"><img src="img/Studio.jpg" alt="Интерьер"></a>
-					</figure>
-  
-					<button class="button gallery-button gallery-button-back" type="button" disabled>Назад</button>
-					<button class="button gallery-button gallery-button-back" type="button">Вперед</button>
+				<div class="gallery">
+					<h2>Фотогалерея</h2>
+					<div class="gallery-container">
+						<figure class="gallery-content">
+							<a href="#"><img src="img/Studio.jpg" alt="Интерьер"></a>
+						</figure>
+	
+						<div class="gallery-footer">
+								<button class="button gallery-button gallery-button-back" type="button" disabled>Назад</button>
+								<button class="button gallery-button gallery-button-back" type="button">Вперед</button>
+						</div>
+					</div>
 				</div>
 			</div>
 		</section>
 
-		<section class="container contacts index-collumns">
-			<div class="contacts-list">
-				<h2>Контатная информация</h2>
+		<section class="container">
+			<div class="contacts index-collumns">
+				<div class="contacts-list">
+					<h2>Контатная информация</h2>
 
-				<p>
-					Барбершоп "Бородинский"<br>
-					Адрес:г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
-					Телефон:+7(495)666-02-66</p>
-				<p>
-					Время работы:<br>
-					ПН-ПТ: с 10:00 до 22:00<br>
-					СБ-ВС: с 10:00 до 19:00
-				</p>
+					<p>
+						Барбершоп "Бородинский"<br>
+						Адрес:г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
+						Телефон:+7(495)666-02-66</p>
+					<p>
+						Время работы:<br>
+						ПН-ПТ: с 10:00 до 22:00<br>
+						СБ-ВС: с 10:00 до 19:00
+					</p>
 
-				<div class="contact-list-footer">
-					<a class="button" href="map.html">Как проехать</a>
-					<a class="button" href="contacts.html">Обратная связь</a>
+					<div class="contact-list-footer">
+						<a class="button" href="map.html">Как проехать</a>
+						<a class="button" href="contacts.html">Обратная связь</a>
+					</div>
 				</div>
-			</div>
 
-			<div class="appointment">
-				<h2>Записаться</h2>
-				<p class="appointment-info">Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони
-				</p>
-				<form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
-					<div class="form-group">
-						<div class="form-col">
-							<label for="data-field">Дата</label>
-							<input type="text" id="data-field" name="data" value="08.10.2017" class="form-control">
+				<div class="appointment">
+					<h2>Записаться</h2>
+					<p class="appointment-info">Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони
+					</p>
+					<form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
+						<div class="form-group">
+							<div class="form-col">
+								<label for="data-field">Дата</label>
+								<input type="text" id="data-field" name="data" value="08.10.2017" class="form-control">
+							</div>
+
+							<div class="form-col">
+								<label for="time-field">Время</label>
+								<input type="text" id="time-field" name="time" value="10:00" class="form-control">
+							</div>
 						</div>
 
-						<div class="form-col">
-							<label for="time-field">Время</label>
-							<input type="text" id="time-field" name="time" value="10:00" class="form-control">
-						</div>
-					</div>
+						<div class="form-group">
+							<div class="form-col">
+								<label for="name-field">Ваше имя</label>
+								<input type="text" name="name" id="name-field" value="Борода" class="form-control">
+							</div>
 
-					<div class="form-group">
-						<div class="form-col">
-							<label for="name-field">Ваше имя</label>
-							<input type="text" name="name" id="name-field" value="Борода" class="form-control">
+							<div class="form-col">
+								<label for="phone-field">Телефон</label>
+								<input type="text" name="phone" id="phone-field" value="+7 123 456-78-90"><br class="form-control">
+							</div>
 						</div>
 
-						<div class="form-col">
-							<label for="phone-field">Телефон</label>
-							<input type="text" name="phone" id="phone-field" value="+7 123 456-78-90"><br class="form-control">
+						<div class="form-group">
+							<button type="submit" class="button button-submit">Отправить</button>
 						</div>
-					</div>
-
-					<div class="form-group">
-						<button type="submit" class="button button-submit">Отправить</button>
-					</div>
-				</form>
+					</form>
+				</div>
 			</div>
 		</section>
 	</div>
