@@ -54,6 +54,7 @@ input[type="radio"].visually-hidden {
   width: 368px;
   height: 153px;
   margin: 0 auto;
+  margin-top: 60px;
 }
 
 .main-header {
@@ -62,11 +63,13 @@ input[type="radio"].visually-hidden {
   color: #fff;
   background-color: #000;
   background-attachment: fixed;
+ 
 }
 
 .main-navigation {
   display: flex;
   justify-content: space-between;
+
 }
 
 .main-navigatin-wrapper {
@@ -84,7 +87,6 @@ input[type="radio"].visually-hidden {
 .site-navigation {
   display: flex;
   flex-wrap: wrap;
-  width: 620px;
   margin: 0;
   padding: 0;
 }
@@ -186,9 +188,7 @@ input[type="radio"].visually-hidden {
   margin: 0 10px;
 }
 
-.features {
-  margin-bottom: 80px;
-}
+
 
 .articles {
   width: 380px;
@@ -199,9 +199,12 @@ input[type="radio"].visually-hidden {
   justify-content: space-between;
   padding: 50px 80px;
   color: #000;
-  background-image: url("../img/pattern-light.jpg");
+  background-image: url("../img/Line.png"),
+                    url("../img/pattern-light.jpg");
+  background-position: center, 0 0;                  
   background-color: #f8f5f2;
-  background-repeat: repeat;
+  background-repeat:no-repeat, repeat;
+  margin-top: 80px;
 }
 
 .index-collumns h2 {
@@ -222,6 +225,10 @@ input[type="radio"].visually-hidden {
 
 .news-item p {
   margin: 0;
+}
+
+.news-item {
+  margin-top:  15px;
 }
 
 .news-item time {
@@ -302,9 +309,11 @@ input[type="radio"].visually-hidden {
 
 .contacts {
   color: #000;
-  background-image: url("../img/pattern-light.jpg");
+  background-image: url("../img/Line.png"),
+                    url("../img/pattern-light.jpg");
+  background-position: center, 0 0;                  
   background-color: #f8f5f2;
-  background-repeat: repeat;
+  background-repeat:no-repeat, repeat;
   margin-top: 35px;
 }
 
@@ -315,6 +324,12 @@ input[type="radio"].visually-hidden {
 
 .contacts-list {
   width: 380px;
+}
+
+.contact-list-footer a {
+  box-sizing: border-box;
+  width: 140px;
+
 }
 
 .appointment input {
@@ -330,7 +345,7 @@ width: 140px;
 .form-col label {
   display: block;
   margin: 9px;
-  padding: 15px;
+  padding: 3px;
 }
 
 .form-col input {
