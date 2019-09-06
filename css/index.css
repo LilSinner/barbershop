@@ -35,8 +35,8 @@ img {
 }
 
 .visually-hidden:not(:focus):not(:active),
-input[type="checkbox"].visually-hidden,
-input[type="radio"].visually-hidden {
+input[type="checkbox"].visually-hidden, /* form-control */
+input[type="radio"].visually-hidden {  /* form-control */
   position: absolute;
   width: 1px;
   height: 1px;
@@ -63,19 +63,16 @@ input[type="radio"].visually-hidden {
   color: #fff;
   background-color: #000;
   background-attachment: fixed;
- 
 }
 
 .main-navigation {
   display: flex;
   justify-content: space-between;
-
 }
 
 .main-navigatin-wrapper {
   width: 100%;
   margin-bottom: 60px;
-
   background-color: #000;
 }
 
@@ -124,7 +121,7 @@ input[type="radio"].visually-hidden {
 }
 
 .login-link::before {
-  background: url("../img/svg/login.svg") no-repeat 0 0;
+  background: url("../img/svg/login.svg") no-repeat;
   position: absolute;
   top: 27px;
   left: 24px;
@@ -188,8 +185,6 @@ input[type="radio"].visually-hidden {
   margin: 0 10px;
 }
 
-
-
 .articles {
   width: 380px;
 }
@@ -221,6 +216,7 @@ input[type="radio"].visually-hidden {
   margin: 0;
   margin-bottom: 25px;
   padding: 0;
+  padding-right: 35px;
 }
 
 .news-item p {
@@ -228,7 +224,7 @@ input[type="radio"].visually-hidden {
 }
 
 .news-item {
-  margin-top:  15px;
+  margin-top: 15px;
 }
 
 .news-item time {
@@ -328,8 +324,6 @@ input[type="radio"].visually-hidden {
 
 .contact-list-footer a {
   box-sizing: border-box;
-  width: 140px;
-
 }
 
 .appointment input {
@@ -339,7 +333,7 @@ input[type="radio"].visually-hidden {
 }
 
 .form-col {
-width: 140px;
+  width: 140px;
 }
 
 .form-col label {
@@ -375,7 +369,7 @@ width: 140px;
 .button-submit {
   display: block;
   width: 100%;
-  margin-top: 10px;
+  margin-top: 20px;
   margin-right: 0;
 }
 
@@ -497,10 +491,7 @@ width: 140px;
   border: 2px solid #000;
 }
 
-
-
-
-/* Всплывающая форма */
+ /* MODAL */
 
 .modal {
   position: fixed;
@@ -585,8 +576,8 @@ width: 140px;
   margin-bottom: 10px;
 }
 
-.login-form input[type="text"],
-.login-form input[type="password"] {
+.login-form .form-control,
+.login-form .form-control {
   box-sizing: border-box;
   width: 300px;
   padding: 10px 15px;
